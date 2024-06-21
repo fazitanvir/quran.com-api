@@ -27,6 +27,7 @@ namespace :qdc do
     get :languages
     get :chapter_infos
     get :verse_media
+    get :word_by_word_translations
   end
 
   get :chapters, to: 'chapters#index'
@@ -72,6 +73,7 @@ namespace :qdc do
     get 'by_hizb/:hizb_number', action: 'by_hizb'
     get 'by_ruku/:ruku_number', action: 'by_ruku'
     get 'by_key/:verse_key', action: 'by_key'
+    get 'by_range', action: 'by_range'
 
     get :filter
 
